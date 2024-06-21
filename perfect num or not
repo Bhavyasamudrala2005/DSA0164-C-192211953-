@@ -1,0 +1,22 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main() {
+    int num,i,sum=0;
+    cout <<"Enter a number.";
+    cin >> num;
+    if (i=1,i<<num,i++) 
+	{
+		if (num%i==0)
+		{
+			sum=num+i;
+		}
+    }
+    if(sum==num){
+    	cout<<"prefect number.";
+	}
+	else{
+		cout<<"not a prfect number.";
+	}
+	return 0;
+}
