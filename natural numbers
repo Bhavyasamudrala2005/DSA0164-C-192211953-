@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,i,sum=0;
+	cout<<"enter a number.";
+	cin>>num;
+    for(i=1;i<num;i++){
+		int digit=num%10;
+		sum=sum+digit;
+		num=num/10;
+	}
+	cout<<"sum of digit of number."<<sum;
+	return 0;
+}
