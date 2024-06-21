@@ -1,0 +1,14 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main() {
+    int num;
+    cout <<"Enter a number.";
+    cin >> num;
+    if (num<0){
+    	cout<<"square rooot of a number.";
+	}else{
+		cout<<"square root of a number is."<<sqrt(num);
+	}
+	return 0;
+}
