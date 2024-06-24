@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class VolumeCalculator {
+public:
+    VolumeCalculator(double sideLength) {
+        cout << "Volume of Cube: " << sideLength * sideLength * sideLength << endl;
+    }
+    VolumeCalculator(double radius, double height) {
+        cout << "Volume of Cylinder: " << 3.14159 * radius * radius * height << endl;
+    }
+};
+
+int main() {
+    double sideLength, radius, height;
+    cout << "Enter side length of the cube: ";
+    cin >> sideLength;
+    VolumeCalculator cube(sideLength);
+    cout << "Enter radius and height of the cylinder: ";
+    cin >> radius >> height;
+    VolumeCalculator cylinder(radius, height);
+
+    return 0;
+}
