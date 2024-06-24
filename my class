@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class MyClass {
+private:
+    int num;
+public:
+    MyClass(int n);
+    void displayNum() {
+        cout << "Number is: " << num << endl;
+    }
+};
+MyClass::MyClass(int n) {
+    num = n;
+}
+int main() {
+    MyClass obj(10);
+    obj.displayNum();
+    return 0;
+}
