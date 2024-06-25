@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    int a = 5, b = 10, c = 3;
+    int *ptr_a = &a, *ptr_b = &b, *ptr_c = &c;
+    
+    int greatest = *ptr_a;  
+    
+    if (*ptr_b > greatest) {
+        greatest = *ptr_b;
+    }
+    if (*ptr_c > greatest) {
+        greatest = *ptr_c;
+    }
+    
+    std::cout << "The greatest number is: " << greatest << std::endl;
+
+    return 0;
+}
