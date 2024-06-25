@@ -1,0 +1,20 @@
+#include <iostream>
+
+class Example {
+private:
+    int value;
+public:
+    Example(int v) : value(v) {}
+    void display() {
+        std::cout << "Value: " << value << std::endl;
+    }
+};
+
+int main() {
+    Example ex(42);
+    Example *ptr = &ex;  
+
+    ptr->display(); 
+
+    return 0;
+}
