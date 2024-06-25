@@ -1,0 +1,31 @@
+ int num;
+public:
+    void setNumber(int n) {
+        num = n;
+    }
+};
+class Square : public Number {
+public:
+    int calculateSquare() {
+        return num * num;
+    }
+};
+class Cube : public Number {
+public:
+    int calculateCube() {
+        return num * num * num;
+    }
+};
+
+int main() {
+    Square squareObj;
+    Cube cubeObj;
+
+    squareObj.setNumber(5);  
+    cubeObj.setNumber(3);    
+
+    std::cout << "Square of " << squareObj.num << " is: " << squareObj.calculateSquare() << std::endl;
+    std::cout << "Cube of " << cubeObj.num << " is: " << cubeObj.calculateCube() << std::endl;
+
+    return 0;
+}
